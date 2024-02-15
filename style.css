@@ -1,0 +1,133 @@
+*{
+padding: 0;
+margin: 0;
+font-family: poppins;
+}
+
+.top_bar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13PX;
+}
+.logo-bar{
+    width: 5%;
+    height: 44px;
+}
+.logo-png{
+    width: 100%;
+    height: 100%;
+}
+.menu-bar>a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.menu-bar a:hover{
+    padding: 5px;
+    color: rgb(194, 34, 34);
+    transition: .5s;
+}
+.three-bar{
+    width: 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+/* first div image box */
+
+
+.fst-image-box{
+    width: 100%;
+    height: 80vh;
+    background-color: blueviolet;
+}
+.first-image{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+.text-image-box{
+    width: 26%;
+    height: 50vh;   
+    margin-top: -290px;
+    margin-left: 390px;
+    color: white;
+    object-fit: cover;
+
+    
+}
+.butt-typ{
+    width: 200px;
+    height: 50px;
+    border-radius: 25%;
+    /* display: flex; */
+    padding: 5px;
+    text-decoration: none;
+    object-fit: cover;
+
+    
+}
+@media only screen and (max-width: 600px) {
+   
+   .menu-bar{
+   
+        display: none;
+    
+   }
+  }
+/* @media only screen and (min-width : 400px) {
+    .menu-button{
+        display: none;
+    }
+    .fst-image-box{
+    min-width: 400px 
+    }
+    .top-bar{
+        min-width: 400px 
+    }
+    .main-content{
+        height: auto;
+        font-size: 60px;
+    }
+
+  } */
+
+  @media only screen and (max-width: 600px) {
+  .menu-bar{
+    height: auto;
+    font-size: 6px;
+  }
+   
+    .hire-me {
+        display: none;
+    }
+    .nave-bar{
+        display: none;
+    }
+    .first-text{
+        height: auto;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+@media only screen and (min-width : 600px) {
+    .menu-button{
+        display: none;
+    }
+    .three-bar{
+        display: none;
+    }
+    .menu-bar{
+        height: auto;
+        font-size: 10px;
+  }
+}
