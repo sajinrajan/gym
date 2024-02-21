@@ -20,6 +20,7 @@ threeBar.addEventListener("click", function() {
 
 
  function close() {
-  document.getElementById("hidden-parent-div").style.width = 0;
+  console.log('close called');
+  document.getElementById("hidden-parent-div").style.display ='none';
 }
 console.log(0);

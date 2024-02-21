@@ -1,7 +1,7 @@
 *{
 padding: 0;
 margin: 0;
-font-family: poppins;
+font-family: monospace;
 }
 
 .top_bar{
@@ -13,6 +13,7 @@ font-family: poppins;
     align-items: center;
     justify-content: space-around;
     font-size: 13PX;
+    
 }
 .logo-bar{
     display: flex;
@@ -36,7 +37,8 @@ font-family: poppins;
 
 .icon-bar>i{
     padding:0px 5px;
-    color: rgb(255, 255, 255);  
+    color: rgb(255, 255, 255); 
+      font-size: 15px; 
    
     
 }
@@ -61,6 +63,7 @@ font-family: poppins;
     position: absolute;
     overflow: hidden;
     padding: 23px 0px 0px 0px;
+    z-index: 1;
 
 }
 .hidden-menu-bar>a{
@@ -83,48 +86,112 @@ font-family: poppins;
     height: 100%;
     object-fit: cover;
 }  
-.text-image-box{
-    width: 26%;
-    height: 50vh;   
-    margin-top: -290px;
-    margin-left: 390px;
-    color: white;
-    object-fit: cover;
+.fst-image-box>h1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    overflow: hidden;
 }
-.butt-typ{
-    width: 200px;
-    height: 50px;
-    padding: 5px;
+.fst-image-text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    overflow: hidden;
+
+}
+.view-workout-button{
+    border: 9px solid red;
     background-color: red;
-    text-decoration: none;
-    object-fit: cover;
-}
-.second-box{
-    width: 100%;
-    height: 55vh;
-    background-color: rgb(57, 63, 68);
-  }
-.img-second-box{
-    width: 25%;
-    height: 100%;
-    object-fit: cover;
-    margin-left: 1000px;
-    
+    color: white;
+    float: inline-end;
 }
 .icon-hidden-parent-div{
     height: auto;
     position: absolute;
     color: white;
+   
+
+    
 }
 .hid-icon-bar>i{
     padding: 15px 0px;
     display: flex;
     justify-content: space-around;
     display: none;
+ 
+
 }
 
 
+/*  second div-box-content  */
 
+.second-box{
+    width: 100%;
+    height: 97vh;
+    background-color: rgb(57, 63, 68);
+    position: relative;
+  }
+.img-second-box{
+    width: 25%;
+    height: 98%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 301px;
+    top: 2px;
+    
+    
+}
+.about-me-1{
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    color: white;
+    font-family: monospace;
+}
+
+.home-class{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+
+}
+.about-class{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+ .home-class:hover{
+    transition: .5s;
+    color: red;
+}
+.about-class:hover{
+    transition: .5s;
+    color: red;
+}
+
+.about-james-clark{
+    position: absolute;
+    left: 784px;
+    top: 120px;
+    color: white;
+}
+.about-content {
+    
+ 
+    position: absolute;
+    left: 802px ;
+    top:258px;
+    font-size: 20PX;
+    color: white;
+}
 
 @media only screen and (max-width : 1050px) {
     .menu-bar{
@@ -146,7 +213,33 @@ font-family: poppins;
     display: none;
     
     }
-}
+    .about-james-clark{
+          position: absolute;
+          left: 246px;
+    top: 152px;
+    color: white;
+    }
+
+    .img-second-box{
+        width: 30%;
+        height: 76%;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 17px;
+        top: -7px;
+        overflow: hidden;
+    } 
+    .about-content {
+     
+        position: absolute;
+        left: 197px;
+        top: 281px;
+        color: white;
+        font-size: 17px;
+    }
+
 @media only screen and (max-width : 460px) {
     .icon-bar>i{
         display: none;
@@ -154,11 +247,72 @@ font-family: poppins;
     #three-bar{
         display: inline
     }
-    .icon-hidden-parent-div  {padding-top: 15px;}
-    .icon-hidden-parent-div  a {font-size: 18px;}
+    .icon-hidden-parent-div  {    
+        top: 29%;
+        position: fixed;
+        /* background: white; */
+        padding: 10px;
+        border-radius: 0px 20px 20px 0px;
+        z-index: 9;
+        backdrop-filter: blur(3px);
+    }
+
+        
+    .icon-hidden-parent-div  a 
+    {
+        font-size: 18px;
+    }
     .hid-icon-bar>i{
         display: flex;
         color: red;
 
     }
+    .fst-image-text{
+        position: absolute;
+        top: 38%;
+        left: 21%;
+        overflow: hidden;
+    }
+
+    .view-workout-button {
+        float: inline-end;
+        position: relative;
+        left: -98px;
+        bottom: -2px;}
+
+.about-james-clark{
+    position: absolute;
+    left: 188px;
+    top: 101px;
+    color: white;
+    font-size: 16px;
+}
+
+.img-second-box {
+    width: 30%;
+    height: 76%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 17px;
+    top: -13px;
+    overflow: hidden;
+
+}
+
+.about-content {
+    position: absolute;
+    left: 157px;
+    top: 156px;
+    color: white;
+    font-size: 18px;}
+
+
+
+
+
+
+
+
 }
