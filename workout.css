@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    }
+ 
+    .home-back{
+        position: relative;
+        background-color: aliceblue;
+    }
+.workout{
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+}
+.home-class{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.home-class:hover{
+    transition: .5s;
+    color: red;
+}
+.seven-image-box{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.text-box{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 21px;
+    overflow: hidden;
+}
+
+.main-text-box{
+    overflow: hidden;
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.small-text-box{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.first-image-box{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(198, 174, 174);
+    position: absolute;
+    top: 22px;
+}
+.first-image{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 52px;
+    left: 197px;
+}
+.first-image-text{
+    position: absolute;
+    left: 579px;
+    top: 54px;
+    font-size: 19px;
+
+}
+
+
+
+@media only screen and (max-width : 1060px) {
+    .main-text-box{
+        font-size: 18px;
+    }
+    .small-text-box{
+        font-size: 13px;
+
+    }
+    .first-image{
+        left: 106px;
+        width: 200px;
+        height: 200px;
+        top: 71px;
+    }
+
+.first-image-text{
+    left: 344px;
+    top: 70px;
+}
+
+
+}
+
+
+@media only screen and (max-width : 720px) 
+{
+
+    .main-text-box{
+        font-size: 10px
+    }
+
+    .small-text-box{
+        font-size: 7px;
+    }
+    .workout{
+        font-size: 27px;
+    }
+    .first-image{
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        top: 42px
+}
+.first-image-text{
+    left: 164px;
+    top: 46px;
+    font-size: 10px;
+    color: white;
+}
+
+
+
+
+
+}
